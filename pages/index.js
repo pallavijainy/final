@@ -43,7 +43,7 @@ export default function Home({data}) {
   )
 }
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
   let res=await fetch(`https://api.github.com/users/pallavijainy`)
   let data=await res.json()
   return{
